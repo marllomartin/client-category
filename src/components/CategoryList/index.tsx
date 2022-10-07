@@ -47,11 +47,11 @@ const CategoryList: React.FC = () => {
               }
             )
           }
-          if (response.status === 500) {
+          else {
             toast.update(
               test,
               {
-                render: "Algo deu errado",
+                render: `Algo deu errado. Erro (${response.status})`,
                 type: "error",
                 closeButton: null,
                 autoClose: 5000,
