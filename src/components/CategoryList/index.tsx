@@ -28,7 +28,7 @@ const CategoryList: React.FC = () => {
   }, [setCategories, setLoading]);
 
   const deleteCategory = async (id: string) => {
-    const test = toast.loading("Please wait...");
+    const test = toast.loading("Aguarde...");
     try {
       fetch(`https://cnctesteapl.azurewebsites.net/odata/CategoriaCliente(${id})`, {
         method: 'DELETE',
@@ -79,7 +79,7 @@ const CategoryList: React.FC = () => {
         <header>Listagem de Categorias</header>
         {loading ?
           <LoaderContainer>
-            <ClipLoader color={"orange"} />
+            <ClipLoader color={"#E96B20"} />
           </LoaderContainer>
           :
           <Table>
