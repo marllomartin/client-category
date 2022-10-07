@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  border-radius: 6px;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
 
   a {
-    margin: 5px;
+    font-size: 20px;
+    margin: 10px;
+    color: orange;
+    padding: 10px;
+    white-space: nowrap;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 `
