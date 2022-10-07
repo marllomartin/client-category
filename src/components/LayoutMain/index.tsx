@@ -1,12 +1,12 @@
 import React from 'react'
 import { Container } from './styles'
-import Header from '../Header'
 import Menu from '../Menu'
+import CategoryRegister from '../CategoryRegister'
 
 const LayoutMain: React.FC = () => (
   <Container>
-    <Header />
     <Menu />
+    <CategoryRegister />
   </Container>
 )
 
