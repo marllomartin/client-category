@@ -19,9 +19,8 @@ Deploy: https://client-category.vercel.app/
 
 <br>
 
-## Tecnologias
-* [JavaScript](https://www.javascript.com/)
-* [TypeScript](https://www.javascript.com/)
+## Tecnologiasty
+* [TypeScript](https://www.typescriptlang.org/)
 * [React](https://reactjs.org/)
 * [Styled Components](https://styled-components.com/)
 
