@@ -63,7 +63,8 @@ const CategoryRegister: React.FC = () => {
                 id="name"
                 value={name}
                 type="text"
-                placeholder={`Ex: "Consultoria"`}
+                placeholder={`Ex: "Consumidor"`}
+                autoComplete="off"
                 onChange={handleChangeName}
                 required={true}
               />
@@ -75,6 +76,7 @@ const CategoryRegister: React.FC = () => {
                 value={description}
                 type="text"
                 placeholder="Breve descrição da categoria"
+                autoComplete="off"
                 onChange={handleChangeDescription}
                 required={false}
               />
