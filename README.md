@@ -26,3 +26,9 @@ Deploy: https://client-category.vercel.app/
 * [Styled Components](https://styled-components.com/)
 
 ## Exemplo de uso
+
+<br>
+
+<p align="center" width="100%">
+<img src=https://github.com/marllomartin/client-category/blob/main/public/images/mobile-showcase.gif width="400px">
+</p>
