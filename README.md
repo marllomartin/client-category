@@ -7,7 +7,7 @@
 ## Sobre
 Aplicação web de uma plataforma de cadastro de categorias de cliente desenvolvida em React com TypeScript e estilizada com Styled Components.
 
-Nessa aplicação, é possível consumir uma API OData e realizar funções de leitura, registro e exclusão de dados.
+Nessa aplicação, é possível consumir uma API OData e realizar funções de leitura, registro e exclusão de dados, além disso, é possível pesquisar por uma categoria específica a ser visualizada.
 
 Deploy: https://client-category.vercel.app/
 
