@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   border-radius: 6px;
-  margin: 15px 20px 0px;
+  margin: 15px 0px 20px;
   padding: 33px;
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -25,6 +25,15 @@ export const Container = styled.div`
     width: 27px;
     border-radius: 8px;
     background-color: orange;
+  }
+
+  input {
+    margin-top: 30px;
+    border: none;
+    background-color: #ededed;
+    height: 40px;
+    width: 300px;
+    padding-left: 10px;
   }
 `
 
@@ -54,7 +63,7 @@ export const Table = styled.table`
   }
 
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #fceccc;
   }
 `
 
