@@ -9,6 +9,7 @@ import { Container, LoaderContainer, Table, ButtonArea } from './styles';
 const CategoryList: React.FC = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const [search, setSearch] = useState<string>('');
 
 
   const loadCategories = useCallback(async () => {
@@ -65,8 +66,13 @@ const CategoryList: React.FC = () => {
     }
   }
 
+  const handleChangeSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearch(event.target.value);
+  }
+
   const handleDelete = async (id: any) => {
     await deleteCategory(id);
+    setSearch('');
   }
 
   useEffect(() => {
@@ -75,6 +81,15 @@ const CategoryList: React.FC = () => {
 
   return (
     <>
+      <Container>
+        <header>Procurar Categoria</header>
+        <input
+          type="text"
+          value={search}
+          placeholder="Procurar categoria por nome"
+          onChange={handleChangeSearch}
+        />
+      </Container>
       <Container>
         <header>Listagem de Categorias</header>
         {loading ?
@@ -91,18 +106,21 @@ const CategoryList: React.FC = () => {
               </tr>
             </thead>
             <tbody>
-              {categories.map((category: Category) => {
-                return (
-                  <tr key={category.Id}>
-                    <td>{category.Nome}</td>
-                    <td>{category.Descricao ? category.Descricao : "Não informado."}</td>
-                    <td>
-                      <ButtonArea>
-                        <button onClick={() => handleDelete(category.Id)}><IoTrashOutline /></button>
-                      </ButtonArea>
-                    </td>
-                  </tr>)
-              })}
+              {
+                categories.filter((category) => category.Nome.toLowerCase()
+                  .includes(search.toLowerCase()))
+                  .map((category: Category) => {
+                    return (
+                      <tr key={category.Id}>
+                        <td>{category.Nome}</td>
+                        <td>{category.Descricao ? category.Descricao : "Não informado."}</td>
+                        <td>
+                          <ButtonArea>
+                            <button onClick={() => handleDelete(category.Id)}><IoTrashOutline /></button>
+                          </ButtonArea>
+                        </td>
+                      </tr>)
+                  })}
             </tbody>
           </Table>
         }
