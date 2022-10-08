@@ -28,6 +28,7 @@ Deploy: https://client-category.vercel.app/
 
 <br>
 
-<p align="center" width="100%">
-<img src=https://github.com/marllomartin/client-category/blob/main/public/images/mobile-showcase.gif width="300px">
-</p>
+<div align="center" width="100%">
+<img src=https://github.com/marllomartin/client-category/blob/main/public/images/mobile-gif-1.gif width="300px">
+<img src=https://github.com/marllomartin/client-category/blob/main/public/images/mobile-gif-2.gif width="300px">
+</div>
