@@ -5,9 +5,10 @@
 </p>
 
 ## Sobre
-Aplicação web de uma plataforma de cadastro de categorias de cliente desenvolvida em React com TypeScript e estilizada com Styled Components.
 
-Nessa aplicação, é possível consumir uma API OData e realizar funções de leitura, registro e exclusão de dados, além disso, é possível pesquisar por uma categoria específica a ser visualizada.
+Customer categories registering web application developed in React using TypeScript and styled using Styled Components.
+
+This application consumes an OData API and can read, create and delete customer data, the application can also search for a specific customer category to be viewed.
 
 Deploy: https://client-category.vercel.app/
 
@@ -19,12 +20,12 @@ Deploy: https://client-category.vercel.app/
 
 <br>
 
-## Tecnologias
+## Technologies Used
 * [TypeScript](https://www.typescriptlang.org/)
 * [React](https://reactjs.org/)
 * [Styled Components](https://styled-components.com/)
 
-## Exemplo de uso
+## Showcase
 
 <br>
 
