@@ -4,7 +4,7 @@
     <img width="90%" src="https://github.com/marllomartin/client-category/blob/main/public/images/desktop.png">
 </p>
 
-## Sobre
+## About
 
 Customer categories registering web application developed in React using TypeScript and styled using Styled Components.
 
